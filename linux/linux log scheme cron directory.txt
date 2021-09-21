@@ -1,0 +1,29 @@
+Configure a log rotation scheme that backs up authentication messages to the /var/log/auth.log.
+
+
+/var/log/wtmp {
+    missingok0.
+    monthly
+    create 0664 root utmp
+    rotate 1
+}
+
+/var/log/btmp {
+    missingok
+    monthly
+    create 0660 root utmp
+    rotate 1
+}
+
+
+/var/log/auth.log {
+    weekly
+    rotate 7
+    notifempty
+    delaycompress
+    missingok
+
+
+
+
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+	
+Free -h > ~/backups/freemem/free_mem.txt
+	
+Du -h > ~/backups/diskuse/disk_use.txt
+	
+Isof > ~/backups/openlist/open_list.txt
+	
+Df -h > ~/backups/freedisk/free_disk.txt
